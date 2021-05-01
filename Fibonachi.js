@@ -17,10 +17,8 @@ const readline = require('readline').createInterface({
     output: process.stdout
   });
    
-  readline.question('program calculate secuence fibonachi, insert a number', number => {
-    console.log(`Hey there ${number}!`);
+  readline.question('program calculate secuence fibonachi, insert a number: ', number => {
     var lista=fibonachi(number)
-    console.log(lista);
     console.log(lista[lista.length-1]);
     readline.close();
   });
