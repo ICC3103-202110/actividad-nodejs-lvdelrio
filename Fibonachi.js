@@ -1,5 +1,5 @@
 function fibonachi(num){
-    let numeros=[0,1];
+    let numeros=[1,1];
     if (num == 0){
         var no_number=[0]
         return no_number
@@ -20,6 +20,7 @@ const readline = require('readline').createInterface({
   readline.question('program calculate secuence fibonachi, insert a number', number => {
     console.log(`Hey there ${number}!`);
     var lista=fibonachi(number)
+    console.log(lista);
     console.log(lista[lista.length-1]);
     readline.close();
   });
